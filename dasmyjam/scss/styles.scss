@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "_variables";
+@import "_reset";
+@import "_base";
+
+// modules
+@import "modules/_header";
+@import "modules/_nav";
+@import "modules/_featured";
+@import "modules/_latest";
+@import "modules/_trending";
+@import "modules/_aside";
+@import "modules/_footer";
+
+// media 
+@import "_media-brad";
+@import "_media-anna"; // final _media will be combined after completion of both _media files

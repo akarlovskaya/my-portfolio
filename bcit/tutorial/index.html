@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tutorial</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="styles/prism.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/wodry.css">
+	<link rel="stylesheet" href="styles/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/aos.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--The following script tag downloads a font from the free fonts server for use within the web page. We recommend that you do not modify it.-->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Rajdhani:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81003959-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+	<div id="container">
+	<header>
+		<nav>
+			<a href="index.html" class="square">T</a>
+			<ul>
+				<li><a href="#tut1">Tutorial 1</a></li>
+				<li><a href="#tut2">Tutorial 2</a></li>
+				<li><a href="#tut3">Tutorial 3</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="intro">
+		<div class="intro_content">
+			<h1><span>Javascript&amp;jQuery</span></h1>
+			<h1>Tutorial</h1>
+			<h2>Let’s play with code!</h2>
+			<div class="sections">
+				<div>
+					<h3>Flipping and rotating text</h3>
+					<!-- 	<a href="tutorial_1.html" target="_blank">Learn how to</a> -->
+					<a href="#tut1">Learn how to</a>
+				</div>
+
+				<div>
+					<h3>Scrolling effects</h3>
+					<a href="#tut2" target="_blank">Learn how to</a>
+				</div>
+
+				<div>
+					<h3>Animation</h3>
+					<a href="#tut3" target="_blank">Learn how to</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<div class="tut_01" id="tut1">
+			<div class="wrapper">
+				<h1>1. Flipping and rotating</h1>
+				<p>We are going to use Wodry.js - a simple jQuery plugin for a text flipping or rotating. <br>Wodry.js has features that allow you to set animation from animations collection.</p>
+
+				<h2>Demo</h2>
+				<div class="wodry">
+					<div class="wodry_demo">
+						<p>I like <span class="wodry1">javascript|jQuery </span></p>
+						<p>It’s <span class="wodry2">cool|awesome</span></p>
+						<p>I can <span class="wodry3">flip|rotate</span> text</p>
+					</div>
+				</div>
+
+				<h2>How it works</h2>
+				<p>1. <a href="https://github.com/daynin/wodry" target="_blank">Download</a> plugin and include wodry.css and wodry.js (or wodry.min.js) files into your project folder.</p>
+				<p>2. Links these files to your HTML and do not forget link jQuery as well.</p>
+				<p>3. Now you are ready to set up HTML, jQuery and style your content like so:</p>
+
+
+				<div class="tab_container" id="tab01">
+
+					<nav class="tab_nav">
+						<ul>
+							<li><a href="#tab_01_content" class="active_tab">HTML</a></li>
+							<li><a href="#tab_02_content">CSS</a></li>
+							<li><a href="#tab_03_content">jQuery</a></li>
+						</ul>
+					</nav><!-- end tab_nav -->
+
+					<div class="tab_contents">
+
+						<div id="tab_01_content" class="tab_content tab_01_content">
+		<pre class="language-markup">
+		<code class="language-markup">
+			&lt;div>
+				&lt;p>I like &lt;span class="wodry1">javascript|jQuery &lt;/span>&lt;/p>
+				&lt;p>It's &lt;span class="wodry2">cool|awesome&lt;/span>&lt;/p>
+				&lt;p>I can &lt;span class="wodry3">flip|rotate&lt;/span> text&lt;/p>
+			&lt;/div>
+		</code></pre>
+							</div><!-- end tab_01_content -->
+
+							<div id="tab_02_content" class="tab_content tab_02_content">
+
+		<pre class="language-css">
+		<code class="language-css">
+			.wodry1,
+			.wodry2,
+			.wodry3 {
+			color: #F6DEC4;
+		}
+		</code></pre>
+							</div><!-- end tab_02_content -->
+
+							<div id="tab_03_content" class="tab_content tab_03_content">
+
+		<pre class="language-javascript">
+		<code class="language-javascript">
+		$('.wodry1').wodry({
+			animation: 'rotateAll',
+			delay: 1000
+		});
+
+		$('.wodry2').wodry({
+			animation: 'rotateX',
+			delay: 1000,
+			animationDuration: 800
+		});
+
+		$('.wodry3').wodry({
+			animation: 'rotateY',
+			delay: 1000,
+			animationDuration: 300
+		});
+		</code></pre>
+
+
+					</div><!-- end tab_03_content -->
+
+				</div><!-- end tab_contents -->
+
+			</div><!-- end tab_container -->
+
+
+			<h2>Custom settings</h2>
+			<p>Settings object has the following fields:</p>
+			<ul class="custom_set">
+				<li><span>Separator</span>: sets a custom separator between flipped text. <span>Default value:</span> “|”</li>
+				<li><span>Delay</span>: sets a delay of interations. <span>Default value:</span> 2000</li>
+				<li><span>Animation duration</span>: sets duration of animation. <span>Default value:</span> 500</li>
+				<li><span>Animation</span>: sets a type of animation. <span>Default value:</span> “rotateY”</li>
+				<li><span>Callback</span>: sets a callback that calls on each iteration. <span>Default value:</span> an empty function</li>
+				<li><span>Shift</span>: specify the X, Y and Z values of shifting. Default value: {x:0,y:0,z:0}</li>
+			</ul>
+
+			<p>List of animations: rotateX, rotateY, rotateAll, scaleX, scaleY, scaleAll, clockwise, anticlockwise.</p>
+
+		</div> <!-- end wrapper -->
+	</div> <!-- end tut_01 -->
+
+	<div class="tut_02" id="tut2">
+		<div class="wrapper">
+			<h1>2. Scrolling effects</h1>
+			<p>For scrolling effects we are going to use another jQuery plugin called AOS - Animate On Scroll Library. <br>AOS allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it’s previous state and are ready to animate again if you scroll down.</p>
+
+			<h2>Demo</h2>
+			<div class="scrolling">
+				<div class="item" data-aos="fade-up">1</div>
+				<div class="items_container">
+					<div class="item" data-aos="fade-right" data-aos-easing="ease-in-sine">2</div>
+					<div class="item" data-aos="fade-left" data-aos-easing="ease-in-sine">3</div>
+				</div>
+				<div class="items_container">
+					<div class="item" data-aos="flip-left" data-aos-delay="300">4</div>
+					<div class="item" data-aos="flip-right" data-aos-delay="300">5</div>
+				</div>
+			</div>
+
+			<h2>How it works</h2>
+			<p>1. <a href="https://github.com/michalsnik/aos" target="_blank">Download</a> plugin from GitHub and put CSS and JS files from “dist” file into your project folder.</p>
+			<p>2. Then link these files to your HTML. Do not forget link jQuery as well.</p>
+			<p>3. Now you are ready to set up your HTML, jQuery and style your content like so:</p>
+
+
+			<div class="tab_container" id="tab02">
+
+				<nav class="tab_nav">
+					<ul>
+					<li><a href="#tab_04_content" class="active_tab">HTML</a></li>
+						<li><a href="#tab_05_content">CSS</a></li>
+						<li><a href="#tab_06_content">jQuery</a></li>
+					</ul>
+				</nav><!-- end tab_nav -->
+
+				<div class="tab_contents">
+
+					<div id="tab_04_content" class="tab_content tab_01_content">
+		<pre class="language-markup">
+		<code class="language-markup">
+		&lt;div>
+			&lt;div class="item" data-aos="fade-up">1&lt;/div>
+			&lt;div class="items_container">
+				&lt;div class="item" data-aos="fade-right" data-aos-easing="ease-in-sine">2&lt;/div>
+				&lt;div class="item" data-aos="fade-left" data-aos-easing="ease-in-sine">3&lt;/div>
+			&lt;/div>
+			&lt;div class="items_container">
+				&lt;div class="item" data-aos="flip-left" data-aos-delay="300">4&lt;/div>
+				&lt;div class="item" data-aos="flip-right" data-aos-delay="300">5&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		</code></pre>
+						</div><!-- end tab_02_content -->
+
+						<div id="tab_05_content" class="tab_content tab_02_content">
+		<pre class="language-css">
+		<code class="language-css">
+		.items_container {
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+		}
+
+		.item {
+			width: 150px;
+			height: 150px;
+			margin: 35px auto;
+			padding-top: 35px;
+			background: #AA3763;
+			text-align: center;
+			color: #FFF;
+			font-size: 3em;
+		}
+		</code></pre>
+				</div><!-- end tab_02_content -->
+
+				<div id="tab_06_content" class="tab_content tab_03_content">
+		<pre class="language-javascript">
+		<code class="language-javascript">
+		AOS.init({
+			duration: 1200
+		});
+		</code></pre>
+				</div><!-- end tab_03_content -->
+
+			</div><!-- end tab_contents -->
+		</div><!-- end tab_container -->
+
+		<p>More interesting effects check out <a href="https://css-tricks.com/aos-css-driven-scroll-animation-library/" target="_blank">here!</a>
+
+			<h2>Additional Features</h2>
+			<p>Settings object has the following fields:</p>
+			<ul class="custom_set">
+				<li><span>Anchor</span>: animate one element based on position of other element</li>
+				<li><span>Anchor placement</span>: animate an element based on it’s position on the screen. It doesn’t have to animate only when it appears in viewport, but for example when bottom part of it hits middle of the screen</li>
+				<li><span>Both way animations</span>: by default elements animate while you scroll up and down, but you can force it to animate only once</li>
+				<li><span>Easy disabling</span>: disable animations on mobile devices using predefined options like <code>mobile</code>, <code>phone</code>, <code>tablet</code> or with a custom condition/function</li>
+				<li><span>Async aware</span>: recalculates positions of elements on DOM changes, so after loading something using Ajax, you don’t have to worry about anything (unless you support IE9, because it needs mutation observer)</li>
+				<li><span>No dependencies</span>: this library is written in pure JS and doesn’t rely on any dependencies</li>
+			</ul>
+
+		</div> <!-- end wrapper -->
+	</div> <!-- end tut_02 -->
+
+	<div class="tut_03" id="tut3">
+		<div class="wrapper">
+			<h1>3. Animation</h1>
+			<p>Now we are going to create animation using animate.css library and jQuery. Animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and etc.</p>
+
+			<h2>Demo</h2>
+			<p>Click on a shape!<p>
+				<div class="animation">
+					<div class="shape shape_01">1</div>
+					<div class="shape shape_02">2</div>
+					<div class="shape shape_03">3</div>
+					<div class="shape shape_04">4</div>
+					<div class="shape shape_05">5</div>
+					<div class="shape shape_06">6</div>
+			</div>
+
+			<h2>How it works</h2>
+			<p>1. <a href="https://github.com/daneden/animate.css" target="_blank">Download</a> plugin from GitHub and include the stylesheet on your HTML’s <code>head</code> or use CDN:</p>
+		<pre class="language-markup">
+		<code class="language-markup">
+		&lt;head>
+			&lt;link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+		&lt;/head>
+		</code></pre>
+
+				<p>2. You can do a whole bunch of interesting stuff with animate.css when you combine it with jQuery. So do not forget link jQuery as well.</p>
+				<p>3. Now you are ready to set up your HTML, jQuery and style your content like so:</p>
+
+
+				<div class="tab_container" id="tab03">
+
+					<nav class="tab_nav">
+						<ul>
+							<li><a href="#tab_07_content" class="active_tab">HTML</a></li>
+							<li><a href="#tab_08_content">CSS</a></li>
+							<li><a href="#tab_09_content">jQuery</a></li>
+						</ul>
+					</nav><!-- end tab_nav -->
+
+					<div class="tab_contents">
+
+						<div id="tab_07_content" class="tab_content tab_01_content">
+		<pre class="language-markup">
+		<code class="language-markup">
+		&lt;div class="animation">
+			&lt;div class="shape shape_01">&lt;/div>
+			&lt;div class="shape shape_02">&lt;/div>
+			&lt;div class="shape shape_03">&lt;/div>
+			&lt;div class="shape shape_04">&lt;/div>
+			&lt;div class="shape shape_05">&lt;/div>
+			&lt;div class="shape shape_06">&lt;/div>
+		&lt;/div>
+		</code></pre>
+							</div><!-- end tab_02_content -->
+
+							<div id="tab_08_content" class="tab_content tab_02_content">
+		<pre class="language-css">
+		<code class="language-css">
+		.shape { 
+			width: 100px;
+			height: 100px; 
+			margin: 10px auto;
+			padding-top: 7px;
+			background: #AA3763;
+			text-align: center;
+			color: #FFF;
+			font-size: 2em;
+		}
+		</code></pre>
+						</div><!-- end tab_02_content -->
+
+						<div id="tab_09_content" class="tab_content tab_03_content">
+		<pre class="language-javascript">
+		<code class="language-javascript">
+	$(function() {
+			var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+			$('.shape_01').on('click',function(){
+			$('.shape_01').addClass('animated zoomInLeft').one(animationEnd,function(){
+				$(this).removeClass('animated zoomInLeft');
+			});
+		});
+	});
+
+	$(function() {
+			var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+			$('.shape_02').on('click',function(){
+			$('.shape_02').addClass('animated swing').one(animationEnd,function(){
+				$(this).removeClass('animated swing');
+			});
+		});
+	});
+
+	$(function() {
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$('.shape_03').on('click',function(){
+		$('.shape_03').addClass('animated shake').one(animationEnd,function(){
+			$(this).removeClass('animated shake');
+		});
+	});
+	});
+
+	$(function() {
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$('.shape_04').on('click',function(){
+		$('.shape_04').addClass('animated jello').one(animationEnd,function(){
+			$(this).removeClass('animated jello');
+		});
+	});
+	});
+
+	$(function() {
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$('.shape_05').on('click',function(){
+		$('.shape_05').addClass('animated tada').one(animationEnd,function(){
+			$(this).removeClass('animated tada');
+		});
+	});
+	});
+
+	$(function() {
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		$('.shape_06').on('click',function(){
+		$('.shape_06').addClass('animated fadeOutDown').one(animationEnd,function(){
+			$(this).removeClass('animated fadeOutDown');
+		});
+	});
+	});
+					
+		</code></pre>
+	</div><!-- end tab_03_content -->
+
+	</div><!-- end tab_contents -->
+	</div><!-- end tab_container -->
+
+	<p>More interesting effects check out <a href="https://daneden.github.io/animate.css/" target="_blank">here!</a>
+
+	</div> <!-- end wrapper -->
+	</div> <!-- end tut_02 -->
+
+	<div class="endMessage" data-aos="zoom-in">
+		<h1>The End</h1>
+		<h1>Have fun!</h1>
+	</div>
+
+	</main>
+
+	<footer>
+		<p>&copy;2016 Anna Karlovskaya</p>
+		<p>For educational purpose</p>
+
+	</footer>
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="scripts/prism.js"></script>
+	<script src="scripts/wodry.js"></script>
+	<script src="scripts/aos.js"></script>
+	<script src="scripts/script.js"></script>
+	</div> <!-- end container -->
+</body>
+</html>

@@ -1,0 +1,52 @@
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#book-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#book-form div:last-child {
+    max-width: 300px;
+    margin: auto;
+}
+
+.success, .error {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    color: white;
+}
+
+.success {
+    background-color: MEDIUMSEAGREEN;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: LIGHTCORAL;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.delete {
+    color: white;
+    text-decoration: none;
+    background-color: LIGHTCORAL;
+    padding: 3px 5px;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.delete:hover, .delete:active, .delete:focus {
+    color: white;
+    background-color: INDIANRED;
+}
+
+div input[type=submit] {
+    background-color: lavender;
+}

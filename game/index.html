@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Matching Game</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Freckle+Face' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81003959-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="background">
+
+  <header>
+    <h1 class="animated zoomInDown">New Worlds Explorer</h1>
+  </header>
+
+  <div class="ship">
+    <img src="images/spaceship.png" alt="Spaceship">
+  </div> 
+
+  <div class="container">
+
+    <div class="display">
+      <div class="btn_play_and_reset"><p>Start</p></div>
+
+        <div class="menu">
+          <div class="output_turns">
+            <h2>Number of Turns</h2>
+            <p>0</p>
+          </div>
+          
+          <div class="output_matched">
+            <h2>Number of Matches</h2>
+            <p>0</p>
+          </div>
+
+          <div class="footer_notes">
+            <p>Original Images from <a href="http://www.freepik.com" target="_blank">Freepik</a></p>
+            <p>&copy;2016 Anna Karlovskaya <br> For educational purpose</p>
+          </div>
+
+        </div>
+    </div>
+     
+    <div class="no_game_board game_board">
+      <div class="row row_01">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_01 -->
+
+      <div class="row row_02">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_02 -->
+
+      <div class="row row_03">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_03 -->
+
+      <div class="row row_04">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_04 -->
+
+      <div class="row row_05">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_05 -->
+
+      <div class="row row_06">
+        <div class="col col_01">
+        </div><!-- end col_01 -->
+        <div class="col col_02">
+        </div><!-- end col_02 -->
+        <div class="col col_03">
+        </div><!-- end col_03 -->
+        <div class="col col_04">
+        </div><!-- end col_04 -->
+        <div class="col col_05">
+        </div><!-- end col_05 -->
+        <div class="col col_06">
+        </div><!-- end col_06 -->
+      </div><!-- end row_06 -->
+    </div><!-- end game_board --> 
+
+  </div> <!-- end container -->
+
+  <div class="end hideEndMsg">
+
+    <div class="awesome_p">
+      <p>Awesome job! <br> You discovered them all!</p>
+    </div>
+
+    <div class="asteroid animated shake">
+      <img src="images/asteroid.png" alt="Asteroid with monsters">
+      <img class="hide animated infinite rotateIn" src="images/monster_rotate.png" width="50" height="50" alt="Flying monster">
+      <img class="hide animated infinite pulse" src="images/monster_pulse.png" width="70" height="80" alt="Flying monster">
+    </div>
+    
+  </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

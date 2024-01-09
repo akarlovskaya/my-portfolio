@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 01</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<div class="intro">
+			<h1>An HTML Form With PHP Processing Script</h1>
+			<p>If you&rsquo;d like to try filling in this form with valid credentials, you will need to use <bold>First Name: Anna</bold> and <bold>Last Name: Karlovskaya.</bold></p>
+		</div>
+
+		<div class="form_body">
+
+		<form action="form_processing.php" method="get">
+			<fieldset>	
+				<legend>Please complete and submit the form</legend>
+				<label for="firstname">First Name:</label> 
+				<input	type="text" 
+						id="firstname" 
+						name="firstname"
+						size="35"
+						/><br />
+				<label for="lastname">Last Name:</label> 
+				<input	type="text" 
+						id="lastname" 
+						name="lastname"
+						size="35"
+						/>
+				<br />
+				<label for="studentnumber">Student Number:</label> 
+				<input	type="text" 
+						id="studentnumber" 
+						name="studentnumber"
+						size="35"
+						/>
+			</fieldset>	
+				
+			<fieldset>		
+				<legend>Gender</legend>
+				<input type="radio" name="gender" value="male" id="male" />
+				<label for="male">Male</label>
+				<br />
+				<input type="radio" name="gender" value="female" id="female" />
+				<label for="female">Female</label>
+				<br />
+			</fieldset>
+
+			<fieldset>		
+				<legend>Describe yourself (Choose all that apply)</legend>
+				<input type="checkbox" name="self[]" value="healthy" id="healthy" />
+				<label for="healthy">Healthy</label>
+				<br />
+				<input type="checkbox" name="self[]" value="wealthy" id="wealthy" />
+				<label for="wealthy">Wealthy</label>
+				<br />
+				<input type="checkbox" name="self[]" value="wise" id="wise" />
+				<label for="wise">Wise</label>
+				<br />
+			</fieldset>
+
+			<input type="submit" value="Submit" />			
+			
+		</form>
+		</div>
+	</div>
+</body>
+</html>

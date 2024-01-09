@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* General style*/
+/* reset browser's defaults*/
+h1, h2, h3, ul { margin: 0; padding: 0;}
+body {margin: 0; padding: 0;}
+
+/* box-sizing reset - apply a natural box layout model to all elements, but allowing components to change */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #393E46;
+}
+
+p {
+	line-height: 1.7;
+}
+
+/* Links style */
+.link {
+	color: #144673;
+}
+
+.link:hover,
+.link:focus {
+	text-decoration: underline;
+	color: #47429D;
+}
+
+.link:visited {
+	text-decoration: underline;
+	color: #6C3779;
+}
+
+/* Navigation style*/
+.nav-section {
+	background-color: #fff;
+	height: 100px;
+}
+
+nav {
+	height: 100px;
+	margin-left: 30px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+nav ul a {
+	float: left;
+	color: #393E46;
+	width: 8%;
+	text-decoration: none;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #47476b;
+	/*text-shadow: 2px 2px 2px #c2c2d6;*/
+	/*background-color: #d9d9d9;*/
+	/*color: #fff;*/
+	text-decoration: underline;
+}
+
+.active a {
+	color: #004182;
+	text-decoration: underline;
+	padding-bottom: 5px;
+/*	background-color: #f0f0f0;*/
+	/*text-shadow: 2px 2px 2px #c2c2d6;*/
+}
+
+footer {
+	padding-bottom: 5px;
+	line-height: 0.6;
+	text-align: center;
+	font-size: 12px;
+	margin: 0;
+	clear: both;
+}
+
+footer a {
+	color: #666699;
+}
+
+.logo {
+	float: left;
+	padding-top: 15px;
+}
+
+/* Home page */
+.jumbotron {
+	height: 700px;
+	background-image: url(../images/bg-main1.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: cover;
+	padding:200px 0 140px 0;
+	margin-bottom:70px;
+}
+
+.jumbotron h1 {
+	color: #fff;
+	margin-left: 210px;
+	font-size: 50px;
+}
+
+.jumbotron p {
+	color: #fff;
+	margin-left: 210px;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.facts-bg {
+	background-image: url(../images/bg-image-facts.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Other pages style*/
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #E4E4E4;
+	opacity: 0.9;
+	padding: 0 20px 10px 0;
+}
+
+.preambule {
+	clear: both;
+	margin-top: 100px;
+	text-align: justify;
+	padding: 20px;
+}
+
+.preambule h1 {
+	border-bottom: 2px solid black;
+	padding: 10px 30px 10px;
+}
+.preambule p{
+	line-height: 1.8;
+	width: 850px;
+	margin: 20px auto;
+	font-style: italic;
+	font-size: 17.7px;
+}
+
+.ornaments {
+	margin-left:380px;
+}
+
+/* Facts page style */
+/* Table style */
+.fast-facts {
+	padding: 30px;
+	background-color: #3A4042;
+	width: 960px;
+	color: #fff;
+}
+
+.flag-block {
+	float: left;
+	width: 25%;
+	margin-top: 20px;
+}
+
+figcaption {
+	font-size: 15px;
+	padding-left: 20px;
+}
+table {
+	line-height: 1.7;
+	margin-left: 0;
+}
+
+tbody tr{
+	border: 5px solid red;
+}
+
+td {
+	padding-left: 10px;
+}
+
+.facts-desc {
+	float: left;
+	width: 60%;
+	text-align: justify;
+	margin: 0 20px;
+	padding: 10px 10px 20px 0;
+}
+
+.article-item {
+	border-bottom: 1px solid #f0f0f0;
+	margin-top: 20px;
+	margin-left: 30px;
+
+}
+
+.article-item ul li {
+	list-style-position: inside;
+	line-height: 25px;
+}
+
+.img-cap {
+	float: left;
+	width: 35%;
+	margin-top: 40px;
+}
+
+.fast-facts.figcaption {
+	font-size: 15px;
+	margin-left: 35px;
+	text-align: justify;
+}
+
+.img {
+	margin: 0 auto;
+	margin-top: 40px;
+
+}
+
+.img img {
+	border: 1px solid #393E46;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img.figcaption {
+	margin-left: 35px;
+}
+
+.features-bg {
+	background-image: url(../images/Khan.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* History page style */
+.history-bg {
+	background-image: url(../images/history-bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.history-banner {
+	width: 900px;
+	height: 400px;
+	background-image: url(../images/history-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 10px;
+	border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.history-article {
+	margin: 0 100px 50px;
+	text-align: justify;
+}
+/* Culture page style */
+.culture-bg {
+	background-image: url(../images/culture-bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* Credits style */
+.credits-list {
+	margin: 0 50px;
+}
+
+.h2-credits {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.credits-list ul {
+	list-style-type: none;
+	margin-left: 30px;
+	line-height: 2;
+}
+
+.credits-list ul a {
+	text-decoration: none;
+	list-style-type: none;
+	color: #393E46;
+	font-weight: bold;
+}
+
+.credits-list a:hover,
+.credits-list a:focus {
+	text-decoration: underline;
+	color: #47429D;
+}
+
+.credits-list a:visited {
+	text-decoration: underline;
+	color: #6C3779;
+}
+
+.credits-bg {
+	background-image: url(../images/sayagata-400px.png);
+}
+
+.horse {
+	margin-left: 380px;
+}
+
+
+
+/** {border: 1px solid black;}*/
+
+
+

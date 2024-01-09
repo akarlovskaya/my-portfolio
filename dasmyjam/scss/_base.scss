@@ -1,0 +1,124 @@
+html{
+	font-size: 100%;
+}
+
+// general styles
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: $black;
+	font-family: $font-stack;
+}
+
+.wrapper{
+	width: 75%;
+	min-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+
+button.btn_mobile_menu{
+	display: none;
+}
+
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	margin-right: 1.4em;
+	flex: 2;
+}
+
+aside{
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.4em;
+	flex: 1;
+}
+
+h1,
+h2,
+h3,
+li,
+a{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 2.1em;
+	color: $black;
+	margin-bottom: 30px;
+	border-bottom: 5px solid $purple-dark;
+}
+
+
+h2{
+	font-size: 1.4em;
+	color: $black;
+}
+
+h3{
+	font-size: 1.2em;
+	color: $black;
+}
+
+h3 a{
+	font-size: 1em;
+	color: $purple-light;
+} // for the comments
+
+p{
+	font-size: 1em;
+	color: $black;
+}
+
+@media (max-width: $desktop-small){
+
+	.wrapper{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		min-width: 1000px;
+	}
+
+	main, aside{
+		margin: 0 auto;
+	}
+
+	h1{
+		font-size: 2.3em;
+	}
+
+	h2{
+		font-size: 1.6em;
+	}
+
+	h3{
+		font-size: 1.4em;
+	}
+
+	h3 a{
+		font-size: 1.2em;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
+
+}
+
+@media (max-width: $tablet-land){
+
+	.wrapper{
+		width: 100%;
+		min-width: 0;
+	}
+
+}

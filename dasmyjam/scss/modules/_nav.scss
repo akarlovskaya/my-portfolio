@@ -1,0 +1,26 @@
+nav.nav_main{
+	width: 100%;
+	background-color: $purple-dark;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 10px 0;
+}
+
+.nav_main ul{
+	display: flex;
+}
+
+.nav_main ul li{
+	margin-left: 5%;
+}
+
+.nav_main ul li a{
+	text-decoration: none;
+	color: $white;
+	font-family: $font-stack;
+	font-size: 1.6em;
+}
+
+.nav_main ul li a:hover{
+	color: $black;
+}

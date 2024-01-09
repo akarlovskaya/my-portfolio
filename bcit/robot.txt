@@ -1,0 +1,7 @@
+
+User-agent: * 
+Allow: /
+
+
+# do not allow to crawl this file
+Disallow: /city/thankyou_page.html

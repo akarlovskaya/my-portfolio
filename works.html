@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Works &ndash; Anna Karlovskaya</title>
+    <meta name="description" content="Portfolio webpage with some selected works">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nothing+You+Could+Do|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- baguettebox gallery -->
+    <link rel="stylesheet" type="text/css" href="styles/baguetteBox.min.css">
+</head>
+
+<body>
+    <header id="top">
+        <div class="inner-nav">
+            <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1>
+            <nav>
+                <a href="#content" class="skip-to-content">Skip to content</a>
+                <ul>
+                    <li><a href="works.html" class="active">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper_projects" id="content">
+            <h1>Selected Works</h1>
+            <nav>
+              <ul class="sorting_nav">
+                <li><a href="#" class="selected">Show All</a></li>
+                <li><a href="#" data-type="magento"> Magento</a></li>
+                <li><a href="#" data-type="wordpress">WordPress</a></li>
+                <li><a href="#" data-type="reactjs">ReactJs</a></li>
+                <li><a href="#" data-type="javascript">JavaScript</a></li>
+                <li><a href="#" data-type="bcit">BCIT</a></li>
+              </ul>
+            </nav>
+
+            <div class="project_intro" data-type="reactjs">
+                <h2>ReactJs Projects</h2>
+                <div class="js-project-wrapper">
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/burger-builder/" target="_blank"><h3>Burger Builder</h3></a>
+                            <p>Single-Page App</p>
+                        </div>
+                        <ul>
+
+                            <li>A user can choose ingredients from the list, add and remove them</li>
+                            <li>The app shows total price and order summary</li>
+                            <li>npm module: <a href="https://github.com/css-modules/css-modules" class="text_link" target="_blank">CSS Modules</a> for scoped CSS</li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/burger-builder/" target="_blank" class="links">View Live</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/zodiac-checker" target="_blank"><h3>Zodiac Checker</h3></a>
+                            <p>Get Zodiac Signs of your friends or team</p>
+                        </div>
+                        <ul>
+                            <li>App accepts mm/dd DOB format and Name</li>
+                            <li>Displays corresponding zodiac sign as text, table and pie chart</li>
+                            <li>Input validation</li>
+                            <li>NPM modules: CSS Module with Sass, "react-google-charts", "react-fontawesome", "uuid" for dynamic IDs</li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/zodiac-checker" target="_blank" class="links">View Live</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/ReactJs-Single-Page-App/#/home" target="_blank"><h3>FooBar website</h3></a>
+                            <p>Single-Page App with React-Router</p>
+                        </div>
+                        <ul>
+                            <li>Routing: HashRouter, Switch, Route, Link, Navlink and Redirect from react-router-dom package</li>
+                            <li>CSS: Bootstrap (Bootswatch Lux theme) plus custom style as inline CSS and component CSS files</li>
+                            <li>Nice transition effect using CSSTransitionGroup from react-transition-group</li>
+                            <li>
+                                <a href="https://www.npmjs.com/package/classnames" class="text_link" target="_blank">Classnames</a>
+                                 module for conditional CSS and <a href="https://formidable.com/open-source/radium/" class="text_link" target="_blank">Radium</a> styling library for hovers
+                            </li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/ReactJs-Single-Page-App/#/home" target="_blank" class="links">View Live</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/reactjs-icon.png" alt="ReactJs icon">
+                            <a href="https://akarlovskaya.github.io/Contact-Manager/" target="_blank"><h3>Contact Manager App</h3></a>
+                            <p>ReactJS simple app to manage contacts</p>
+                        </div>
+
+                        <ul>
+                            <li>Full CRUD functionality using Context API</li>
+                            <li>JSON Placeholder (fake online REST API) and Axios library for HTTP requests</li>
+                            <li><a href="https://www.npmjs.com/package/uuid" class="text_link" target="_blank">UUID</a> npm module for generating IDs on the fly (when did not use JSON Placeholder)</li>
+                            <li><a href="https://www.npmjs.com/package/classnames" class="text_link" target="_blank">Classnames</a>
+                             module for conditional CSS</li>
+                             <li>HashRouter from react-router-dom module</li>
+                        </ul>
+                        <a href="https://akarlovskaya.github.io/Contact-Manager/" target="_blank" class="links">View Live</a>
+                    </div>
+                </div>
+            </div> <!-- .reactjs -->
+
+            <div class="project_intro" data-type="javascript">
+                <h2>Vanilla JS Projects</h2>
+                <div class="js-project-wrapper">
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/add_book/index.html" target="_blank"><h3>Book List</h3></a>
+                            <p>Add and delete a book using simple UI</p>
+                        </div>
+                        <ul>
+                            <li>OOP</li>
+                            <li>ES5 (ES6 version see in <a class="text_link" href="https://github.com/akarlovskaya/JS_30/blob/master/add_book/app-es6.js" target="_blank">GitHub repository</a>)</li>
+                            <li>Validation and Alerts</li>
+                            <li>Sceleton UI Framework</li>
+                        </ul>
+                        <a href="js-projects/add_book/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/calories-tracker-js/index.html" target="_blank"><h3>Calories Tracker</h3></a>
+                            <p>Vanilla JS and Module Pattern</p>
+                        </div>
+
+                        <ul>
+                            <li>ES6 syntax</li>
+                            <li>Three module controllers: Main App, Item and UI</li>
+                            <li>Materialize CSS as UI framework (based on Material Design)</li>
+                        </ul>
+                        <a href="js-projects/calories-tracker-js/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/chucknorrisjokes/index.html" target="_blank"><h3>Chuck Norris Jokes</h3></a>
+                            <p>Vanilla JS, AJAX and external API practice</p>
+                        </div>
+                        <ul>
+                            <li>Enter number of jokes (only positive numbers)</li>
+                            <li>App gets random jokes from <a class="text_link" href="http://www.icndb.com/" target="_blank">external database</a></li>
+                            <li>And shows specified number of random jokes</li>
+                        </ul>
+                        <a href="js-projects/chucknorrisjokes/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/tasks/app.html" target="_blank"><h3>Tasks Tracking</h3></a>
+                            <p>Add, delete, filter through tasks</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Error handling</li>
+                            <li>Materialize CSS as UI framework</li>
+                        </ul>
+                        <a href="js-projects/tasks/app.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/loan_calculator/index.html" target="_blank"><h3>Loan Calculator</h3></a>
+                            <p>Simple calculator using Vanilla JS</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Error handling and input validation</li>
+                            <li>Bootstrap UI Framework</li>
+                        </ul>
+                        <a href="js-projects/loan_calculator/index.html" target="_blank" class="links">View</a>
+                    </div>
+                    <div>
+                        <div class="js-title">
+                            <img src="images/js-icon.png" alt="Js icon">
+                            <a href="js-projects/drum_kit_js01/index.html" target="_blank"><h3>Drum Kit</h3></a>
+                            <p>Hit the key and enjoy its sound!</p>
+                        </div>
+                        <ul>
+                            <li>ES6</li>
+                            <li>Plays sounds on key press</li>
+                            <li>Adds nice button animation</li>
+                        </ul>
+                        <a href="js-projects/drum_kit_js01/index.html" target="_blank" class="links">View</a>
+                    </div>
+                </div>
+            </div> <!-- .javascript -->
+
+            <div class="project_intro" data-type="magento">
+                <figure class="magento">
+                    <img src="images/icon_magento.png" alt="Magento Logo">
+                </figure>
+                <article>
+                    <h2>Featured Magento Projects</h2>
+                    <div class="magento_projects">
+                        <dl>
+                          <dt><a href="https://softwarekeep.com/ms-office-2019" class="text_link" target="_blank">Landing Page about MS Office 2019</a></dt>
+                          <dd>This page is dedicated to coming MS Office 2019 version. Based on design requirements I used following CSS3 features such as svg transform for animation, gradients for interesting Headers effect, flex-box for layout.</dd>
+                          <dt><a href="https://softwarekeep.eu/en/compare-microsoft-office" class="text_link" target="_blank">MS Office Versions Comparison Page</a></dt>
+                          <dd>Versions Comparison Page helps users easily to see most popular MS Office versions and navigate to particular one using tabs. This is a custom Magento Module which I built to encapsulate data, functionality and view for this particular page.</dd>
+                          <dt><a href="https://saveonit.com/can/how-download-install-reinstall-office365-or-office2016-pc" class="text_link" target="_blank">Knowledge Base Pages about MS Office</a></dt>
+                          <dd>This is a set of pages about troubleshooting MS Office products installation, activation and other most common questions. I like this type of complex tasks, because they require to plan your workflow, organize code and file structure in advance. There are 12 pages with similar design and layouts. So in this particular case I identified design patterns and created one common stylesheet for all pages and then specific css files with individual style for each page. As result, there is only one place for editing most of the style, however it's possible to customize each page individually too if needed.</dd>
+                        </dl>
+                    </div>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML/HTML5, XML</li>
+                            <li>LESS/SASS, CSS/CSS3</li>
+                            <li>Javascript/jQuery</li>
+                            <li>PHP/PHTML</li>
+                            <li>GIT</li>
+                            <li>InVision, Photoshop</li>
+                            <li>Responsive Web Design (RWD)</li>
+                            <li>Command-line user interface (Terminal)</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- <div class="project_intro" data-type="wordpress">
+                <figure>
+                    <img src="images/spanova.png" alt="">
+                    <figcaption>A Spa Salon Theme</figcaption>
+                </figure>
+                <article>
+                    <h2>Spanova, A WordPress Theme</h2>
+                    <div class="project_data">
+                        <p>Freelance Project</p>
+                        <p>Completed: January 2017</p>
+                    </div>
+                    <p>Another spa salon theme designed and developed by me for <a href="http://www.cappers.ca/" class="text_link" target="_blank">Cappers Applications</a> company. This is a minimalistic, simple Wordpress website with two pages &mdash; Front
+                        Page (Home) with four sections and Posts Page (News). The feature of this site is that Services and Prices are combined in one section. To make it happen, I chose Tabbed navigation as solution and made it responsive and accessible
+                        using best development practices.</p>
+
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>UI/UX Design</li>
+                            <li>Illustrator</li>
+                            <li>Balsamiq Wireframing</li>
+                            <li>GIT</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="http://annakarlovskaya.com/spanova/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div> -->
+
+            <div class="project_intro" data-type="wordpress">
+                <figure>
+                    <img src="images/vgspa.png" alt="">
+                    <figcaption>Spa Salon Website</figcaption>
+                </figure>
+
+                <article>
+                    <h2>Vancouver Green Spa</h2>
+                    <div class="project_data">
+                        <p>Freelance Project</p>
+                        <p>Completed: December 2016</p>
+                    </div>
+                    <p>This is new Wordpress website for beauty salon Vancouver Green Spa. The main goals of this project were to redesign the <a href="http://greenspavan.com/old/" class="text_link" target="_blank">previous version</a> of the site and create
+                        modern look and feel for it without dramatical changes of the current style. In addition to that, the client wanted to edit content easily and share it on the social media platforms. Also, in scope of the project I made a research
+                        and implementation in order to find better solution for the booking processes automatization.</p>
+                    <p>More information about structure and site features see in the <a class="text_link" href="images/wireframes_vancouverGreenSpa.pdf" download>Wireframes<span class="screen-reader-text">in PDF format</span></a> and
+                        <a class="text_link"
+                            href="images/mockup_vancouverGreenSpa.pdf" download>Mockup<span class="screen-reader-text">in PDF format</span></a> files.</p>
+
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>UI/UX Design</li>
+                            <li>Illustrator</li>
+                            <li>GIT</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a class="links" href="http://www.greenspavan.com/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="project_intro" data-type="wordpress">
+                <figure>
+                    <img src="images/aimee.png" alt="">
+                    <figcaption>An Artist&rsquo;s Portfolio Website</figcaption>
+                </figure>
+                <article>
+                    <h2>Portfolio Website</h2>
+                    <div class="project_data">
+                        <p>Final Project, Technical Web Design Program, BCIT</p>
+                        <p>Completed: October 2016</p>
+                    </div>
+                    <p>Working in team me and three partners redesigned and developed new version of the current website of the artist, Aimée Henny Brown. We created responsive WordPress website using Underscores Starter Theme and the best UI/UX practices.</p>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>UI/UX Design</li>
+                            <li>GitHub</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="http://www.aimeebrown.ca/" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="project_intro" data-type="bcit">
+                <figure>
+                    <img src="images/partiendo_screen.png" alt="">
+                    <figcaption>Partiendo. Business Brochure Website</figcaption>
+                </figure>
+                <article>
+                    <h2>Partiendo</h2>
+                    <div class="project_data">
+                        <p>Technical Web Design Program Project, BCIT</p>
+                        <p>Completed: June 2016</p>
+                    </div>
+                    <p>This was Level 02 project for HTML and CSS Course at TWD Program. In addition to code quality this work was marked by creativity and usability of the design as well.</p>
+                    <p>I decided to make web site for a fictional recruitment company &mdash; <span>&ldquo;Partiendo&rdquo;</span>.</p>
+                    <p><span>Note:</span> layout of this project is not responsive and there are only three working pages (Home, Job Seeker and About) due to time limit. </p>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML5 and CSS/CSS3</li>
+                            <li>Information Architecture</li>
+                            <li>Balsamiq Wireframing</li>
+                            <li>Visual Design</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="partiendo.html" target="_blank"> Read more <span class="screen-reader-text">about working process</span></a>
+                        <a class="links" href="partiendo/index.html" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+            <div class="project_intro" data-type="bcit">
+                <figure>
+                    <img src="images/landing_page_devices.png" alt="">
+                    <figcaption>Landing Page</figcaption>
+                </figure>
+                <article>
+                    <h2>Landing Page</h2>
+                    <div class="project_data">
+                        <p>Technical Web Design Program Project, BCIT</p>
+                        <p>Completed: May 2016</p>
+                    </div>
+                    <p>This is my landing page for TWD Program projects.</p>
+                    <p>This page was designed for mobile devices first. I used CSS3 Flexbox mode which helps elements behave predictably and Media Queries with two breakpoints at 575px and 960px.</p>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML5 and CSS/CSS3</li>
+                            <li>Responsive Design</li>
+                            <li>Mobile First</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="bcit/index.html" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+            <div class="project_intro" data-type="bcit">
+                <figure>
+                    <img src="images/dasmyjam.png" alt="">
+                    <figcaption>Responsive Web Page from a pre-designed Mock-Up</figcaption>
+                </figure>
+                <article>
+                    <h2>Mini Group Project</h2>
+                    <div class="project_data">
+                        <p>Technical Web Design Program Project, BCIT</p>
+                        <p>Completed: July 2016</p>
+                    </div>
+                    <p>It was small group project where me and a partner created fully responsive web page that matched to the design of the mock-up. I was responsible for aside, trending posts sections and footer. The challenging part for me was to create
+                        responsive iframes using positioning and percentages and to fit them in given layout.</p>
+                    <p>For this project we wrote our CSS using SASS and used version control system Git and stored code on GitHub.</p>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>HTML5 and CSS/CSS3</li>
+                            <li>Javascript and jQuery</li>
+                            <li>Responsive Design</li>
+                            <li>GitHub</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="links" href="dasmyjam/index.html" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+            <div class="project_intro" data-type="bcit">
+                <figure>
+                    <img src="images/wow.png" alt="">
+                    <figcaption>WOW Radio. Responsive Web Page</figcaption>
+                </figure>
+                <article>
+                    <h2>WOW Radio</h2>
+                    <div class="project_data">
+                        <p>Technical Web Design Program Project, BCIT</p>
+                        <p>Completed: July 2016</p>
+                    </div>
+                    <div>
+                        <p>This is a single responsive web page for a fictional radio station &mdash; <span>&ldquo;WOW Radio&rdquo;</span>.</p>
+                        <p>My preferable way to create responsive content is using the CSS3 Flexible Boxes, or Flexboxes. I find the flexbox model effective and easy to use for complex layouts. For example, I can easily change order or direction of content,
+                            horizontally or vertically align items, specify the length of a flex items etc. In my opinion, flexbox concept is a new level of creating responsive website layouts comparing with floats.</p>
+                        <p>To ensure that my layout will be adaptable to any current and future devices, I prefer to set breakpoints based on content, not defined device widths. Also I use Chrome DevTools&rsquo; Device Mode and viewport controls (responsive
+                            or device-specific mode) to test layout.</p>
+                        <div class="tools">
+                            <p>Tools:</p>
+                            <ul>
+                                <li>HTML5 and CSS/CSS3</li>
+                                <li>Responsive Design</li>
+                                <li>Logo Design</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="links" href="wow_radio/index.html" target="_blank"> View live </a>
+                    </div>
+                </article>
+            </div>
+            <div class="project_intro" data-type="bcit">
+                <figure>
+                    <img src="images/newWorldsExplorer_screen.png" alt="">
+                    <figcaption>
+                        <p>New Worlds Explorer. Matching Game</p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <h2>New Worlds Explorer</h2>
+                    <div class="project_data">
+                        <p>Technical Web Design Program Project, BCIT</p>
+                        <p>Completed: June 2016</p>
+                    </div>
+                    <p>This was Level 01 project for JavaScript and jQuery Course at TWD Program.</p>
+                    <p>In addition to creating matching game with traditional logic, my aim was to make fun game with animated cartoon graphic and some story. I chose space theme where a user become a scientist in an expedition to remote planets and his
+                        goal is to find and collect new species.</p>
+                    <p>Animated rocket ship in the beginning of the game and animated asteroid and aliens in the end were made by using animate.css library. </p>
+                    <p><span>Note:</span> layout of this project is not responsive due to time limit.</p>
+                    <div class="tools">
+                        <p>Tools:</p>
+                        <ul>
+                            <li>Javascript and jQuery</li>
+                            <li>HTML5 and CSS/CSS3</li>
+                            <li>Visual design</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                    <a class="links" href="game/index.html" target="_blank"> View live </a>
+                </article>
+            </div>
+            <div class="contact_me">
+                <p>Let&rsquo;s make great things together!</p>
+                <div class="emailme">
+                    <div class="email_link animated">
+                        <a href="mailto:karlovskaya@gmail.com?Subject=Hello" target="_blank">Email me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end .wrapper_projects -->
+    </main>
+
+    <footer>
+        <small>&copy;2016 - <span id="currentYear"></span> Design and development by Anna&nbsp;Karlovskaya</small>
+        <a href="#top" class="skip-to-top">You have reached bottom. Click this link to get back on top.</a>
+        <p id="back-top">
+            <a href="#top"><span></span>Back to Top</a>
+        </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/baguetteBox.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

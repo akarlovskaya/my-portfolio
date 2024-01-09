@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>About &ndash; Anna Karlovskaya</title>
+    <meta name="description" content="Web Designer in Vancouver, Canada">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nothing+You+Could+Do|Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style_min.css">
+
+</head>
+<body >
+
+    <header id="top">
+        <div class="inner-nav">
+            <h1><a class="myName" href="index.html">Anna Karlovskaya</a></h1>
+            <nav>
+                    <ul>
+                        <li><a href="works.html">Works</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+<main id="content">
+    <div class="wrapper_text">
+
+    <div class="about_photo">
+        <img class="photo" src="images/photo.png" alt="Anna Karlovskaya's photo">
+        <div class="socials">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/annakarlovskaya?trk=nav_responsive_tab_profile" target="_blank">Linkedin</a> </li>
+            <li><a href="https://codepen.io/annakarlovskaya/" target="_blank">Codepen</a> </li>
+            <li><a href="https://github.com/akarlovskaya" target="_blank">GitHub</a> </li>
+
+        </ul>
+        </div>
+
+    </div>
+ <div class="about_text">
+        <h1>About me</h1>
+
+            <p>My journey in web design and front-end development began in December 2015 from working on my own HTML, CSS, and Javascript. Driven by curiosity and eagerness to learn something new, I dove into web development and realized the beauty of coding and the power of web design principles.</p>
+            <p>Before that I worked as an account manager in a staffing agency and have gained extensive experience in customer service. <a href="/images/anna_karlovskaya_cv.pdf" download>Download my CV<span class="screen-reader-text">in PDF format</span></a> to get more information about my background and skills.</p>
+            <p> I am passionate about typography, and creating websites with accessibility in mind. If you are interested in working with me or have any questions &mdash; <a href="mailto:karlovskaya@gmail.com?Subject=Hello" target="_top">email</a> me or find in socials.</p>
+
+            <p>Kindly, <br>Anna</p>
+
+    </div> <!-- end of text section-->
+    </div> <!-- end of .wrapper_text-->
+
+</main>
+
+<footer>
+    <small>&copy;2016- <span id="currentYear"></span> Design and development by Anna&nbsp;Karlovskaya</small>
+    <a href="#top" class="skip-to-top">You have reached bottom. Click this link to get back on top.</a>
+</footer>
+<script>
+    const currentYear = document.getElementById('currentYear').innerHTML = (new Date()).getFullYear();
+</script>
+
+</body>
+</html>

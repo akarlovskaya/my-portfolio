@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drum Kit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body>
+
+	<div class="wrapper">
+		<h1>JS Drum Kit</h1>
+		<p>Press one of these keys</p>
+
+		<div data-key="71" class="key"> 
+			<kbd>G</kbd>
+			<span class="sound">boom</span>
+		</div>
+
+		<div data-key="72" class="key"> 
+			<kbd>H</kbd>
+			<span class="sound">tink</span>
+		</div>
+
+		<div data-key="74" class="key"> 
+			<kbd>J</kbd>
+			<span class="sound">tss</span>
+		</div>
+
+		<div data-key="75" class="key"> 
+			<kbd>K</kbd>
+			<span class="sound">clap</span>
+		</div>
+
+		<div data-key="76" class="key"> 
+			<kbd>L</kbd>
+			<span class="sound">beep</span>
+		</div>
+	</div>
+
+	<audio data-key="71" src="sounds/BD0010.mp3"></audio>	
+	<audio data-key="72" src="sounds/beep9.mp3"></audio>
+	<audio data-key="74" src="sounds/CH.mp3"></audio>
+	<audio data-key="75" src="sounds/CP.mp3"></audio>
+	<audio data-key="76" src="sounds/scifi23.mp3"></audio>
+
+<script>
+
+	function playSound(e) {
+		const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+		const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+		if (!audio) return; //stop function from running
+		audio.currentTime = 0;
+		audio.play();
+		key.classList.add('playing');
+	}
+
+	function removeTransition(e) {
+		if (e.propertyName !== 'transform') return; // skip it if it's not a transform
+		this.classList.remove('playing');
+	}
+
+	const keys = document.querySelectorAll('.key');
+	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+	window.addEventListener('keydown', playSound);
+
+
+</script>
+
+</body>
+</html>

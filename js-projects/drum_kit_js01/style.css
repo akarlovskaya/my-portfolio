@@ -1,0 +1,53 @@
+body {
+	background-color: #EDF2F6;
+	font-family: 'Dosis', sans-serif;
+}
+
+p {
+	margin-bottom: 100px;
+}
+
+.wrapper {
+	width: 70%;
+	margin: 10% auto 0;
+	text-align: center;
+}
+
+kbd {
+	font-size: 2em;
+	color: #FF5656;
+	font-weight: bold;
+	text-shadow: 0 0 3px black;
+}
+
+span {
+	display: block;
+	color: #494953;
+	letter-spacing: 2px;
+	padding-top: 3px;
+}
+
+.key {
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0,0.2);
+	display: inline-block;
+	margin-right: 1.3em;
+	border-radius: 3px;
+	text-align: center;
+	padding: .8em;
+	transition: all 0.07s;
+
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #ff4d4d;
+	box-shadow: 0 0 10px #494953;
+}
+
+
+
+/** {
+	border: 1px solid black;
+}*/

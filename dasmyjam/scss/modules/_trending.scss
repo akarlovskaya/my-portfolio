@@ -1,0 +1,24 @@
+.trending_posts {
+	background-color: $white;
+	padding: 2% 4%;
+	margin: 40px 0;
+
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	article {
+		padding-right: 5px;
+
+		p {
+			text-transform: uppercase;
+			font-size: .7em;
+		}
+	}
+}
+
+.trending_flexbox {
+	display: flex;
+	margin-bottom: 10px;
+
+}

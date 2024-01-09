@@ -1,0 +1,83 @@
+section.latest_posts{
+	background-color: $white;
+	padding: 2% 4%;
+	margin-top: 40px;
+}
+
+section.latest_posts article{
+	display: flex;
+	margin-bottom: 30px;
+}
+
+div.image{
+	flex: 1;
+}
+
+div.image h3{
+	margin-top: .2em;
+}
+
+div.image img{
+	margin-top: 15px;
+}
+
+div.text{
+	flex: 2;
+	margin-left: 20px;
+}
+
+div.text h2{
+	float: left;
+}
+
+div.text h3{
+	float: right;
+	font-size: 1em;
+	margin-top: .55em;
+}
+
+div.text p{
+	clear: both;
+	word-spacing: 2px;
+	margin-top: 50px;
+	line-height: 1.8;
+	width: 92%;
+}
+
+div.text h2 > a{
+	text-decoration: none;
+	color: $black;
+}
+
+div.text h2 > a:hover{
+	color: $purple-light;
+}
+
+a.read_more{
+	float: right;
+	padding: 2% 4%;
+	background-color: $purple-light;
+	margin-top: 2%;
+	text-decoration: none;
+	color: $white;
+	font-size: 1em;
+}
+
+a.read_more:hover{
+	background-color: $black;
+}
+
+div.older_post{
+	text-align: center;
+	padding: 2%;
+}
+
+div.older_post a{
+	text-decoration: none;
+	color: $black;
+	font-size: 1.3em;
+}
+
+div.older_post a:hover{
+	color: $purple-light
+}
